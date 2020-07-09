@@ -6,7 +6,6 @@ import csv
 import os
 global str
 
-
 options = Options()
 options.add_experimental_option("prefs", {
 "download.default_directory": r"C:\certidaoNegativaEstadual", #Por o diretorio em que o pdf vai ser baixado.
