@@ -28,7 +28,6 @@ def ler_csv():
             Resultado.append(row)  
     return Resultado
 
-
 def login(cnpj_empresa):
     try:
         driver.get("https://sistemas.sefaz.ba.gov.br/sistemas/sigat/Default.Aspx?Modulo=CREDITO&Tela=DocEmissaoCertidaoInternet&limparSessao=1&sts_link_externo=2")
@@ -44,7 +43,6 @@ def download_pdf():
     time.sleep(2)
     driver.find_element_by_xpath('//*[@id="_ctl0__ctl0_crv_relatorio"]/tbody/tr[1]/td/table/tbody/tr/td/table/tbody/tr/td[1]/a[2]/img').click()
     driver.find_element_by_name("button").click()
-
 
 def renomear_pdf(razao_empresa):    
     time.sleep(5)
